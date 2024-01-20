@@ -2,12 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>y
-      
+    <div className="container-fluid" id="about">
       <h1>About</h1>
       <p>This is all about me</p>
     </div>
-  )
+  );
 }
 
 export default About

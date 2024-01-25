@@ -1,5 +1,22 @@
 .reviews {
-  background-color: #97cdff;
+  background-color: #979797;
   height: 50vh;
   padding-top: 20px;
+  width: 100%;
+  color: black;
+  padding: 20px 10%;
+}
+
+.container {
+  margin-top: 40px;
+  width: 80%;
+}
+
+.review-info {
+  background-color: #97cdff;
+  height: 25vh;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 400px;
+
 }

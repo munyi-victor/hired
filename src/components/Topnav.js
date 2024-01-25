@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 // import { Link } from 'react-router-dom';
 
 const Topnav = () => {
@@ -40,14 +39,14 @@ const Topnav = () => {
             <a href="#contact">Contact</a>
           </li>
 
-          <div className='btns'>
+          <div className="btns">
             <li>
-              <a href="#" className="button">
+              <a href="/" className="button">
                 Login
               </a>
             </li>
             <li>
-              <a href="#" className="button">
+              <a href="/" className="button">
                 Signup
               </a>
             </li>

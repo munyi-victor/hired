@@ -8,14 +8,7 @@ import About from "./About";
 
 const Home = () => {
   return (
-    <BrowserRouter>
-      <Topnav />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+    
   );
 }
 

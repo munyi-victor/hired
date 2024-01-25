@@ -7,7 +7,7 @@ import Button from "react-bootstrap/esm/Button";
 
 const Contact = () => {
   return (
-    <div className="vh-90 container-fluid p-5" id="contact">
+    <div className="vh-90 p-5 bg-light" id="contact">
       <Form className="w-75 h-75 border border-2 border-dark p-5 rounded-3">
         <FormGroup className="mb-3">
           <FormLabel>Email address</FormLabel>

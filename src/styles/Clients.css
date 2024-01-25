@@ -1,0 +1,18 @@
+.clients {
+  height: 50vh;
+}
+
+.c-title {
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+.companies {
+  margin-left: 30px;
+  padding-bottom: 20px;
+}
+
+.companies span {
+  font-size: 18px;
+  font-weight: bold;
+}

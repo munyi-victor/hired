@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useRef} from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Topnav = () => {
   const menu = useRef();
@@ -29,16 +29,29 @@ const Topnav = () => {
         </span>
         <ul>
           <li>
-            <Link to="/" scroll={false}>
+            <a href="/" scroll={false}>
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="about">About</Link>
+            <a href="#about">About</a>
           </li>
           <li>
-            <Link to="contact">Contact</Link>
+            <a href="#contact">Contact</a>
           </li>
+
+          <div className='btns'>
+            <li>
+              <a href="#" className="button">
+                Login
+              </a>
+            </li>
+            <li>
+              <a href="#" className="button">
+                Signup
+              </a>
+            </li>
+          </div>
         </ul>
       </div>
     </div>

@@ -23,6 +23,7 @@
   text-decoration: none;
   font-size: 26px;
   color: #000;
+  cursor: pointer;
 }
 
 .open-menu {
@@ -41,6 +42,25 @@
   right: 40px;
   top: 10px;
   display: none;
+}
+
+.btns {
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+  padding-top: 14px;
+
+}
+
+.btns .button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 @media only screen and (max-width:670px) {

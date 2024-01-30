@@ -8,6 +8,7 @@ import Landing from "./components/Landing";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Clients from "./components/Clients";
+import WhyUs from "./components/WhyUs";
 // import Reviews from "./components/Reviews";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Landing />
         <Clients />
         <About />
+        <WhyUs/>
         {/* <Reviews/> */}
         <Contact />
       </div>

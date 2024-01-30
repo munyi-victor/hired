@@ -8,7 +8,7 @@ import Landing from "./components/Landing";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Clients from "./components/Clients";
-import Reviews from "./components/Reviews";
+// import Reviews from "./components/Reviews";
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
         <Landing />
         <Clients />
         <About />
-        <Reviews/>
+        {/* <Reviews/> */}
         <Contact />
       </div>
 

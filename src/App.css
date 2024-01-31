@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 @import url("./styles/Topnav.css");
@@ -10,3 +11,4 @@
 @import url("./styles/Clients.css");
 @import url("./styles/Reviews.css");
 @import url("./styles/WhyUs.css");
+@import url("./styles/Footer.css");

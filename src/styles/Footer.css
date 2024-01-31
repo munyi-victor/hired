@@ -1,0 +1,44 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  height: 56.5vh;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  gap: 50px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.footer ul {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 17px;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+.app-img img {
+  width: 250px;
+  display: block;
+}
+
+.for-clients, .freelancers, .quick-links, .app {
+  margin-top: 40px;
+}
+
+.copyright p {
+  text-align: center;
+  color: #fff;
+}

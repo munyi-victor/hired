@@ -6,7 +6,7 @@ import './App.css';
 import Topnav from "./components/Topnav";
 import Landing from "./components/Landing";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Clients from "./components/Clients";
 import WhyUs from "./components/WhyUs";
 // import Reviews from "./components/Reviews";
@@ -21,7 +21,7 @@ const App = () => {
         <About />
         <WhyUs/>
         {/* <Reviews/> */}
-        <Contact />
+        <Footer />
       </div>
 
       

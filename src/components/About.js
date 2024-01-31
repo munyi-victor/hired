@@ -13,7 +13,7 @@ const About = () => {
         <div className="talent">
           <h3>Web Design</h3>
           <p>
-            Here you will find top notch web designers with excellent skills to make your website look appealing to its visitors. For any kind of websites raging from personal ones to business, e-commerce and scgool porfolios, here is the place.
+           Find top notch web designers with excellent skills to make your website look appealing to its visitors. Design any kind of websites raging from personal ones to business, e-commerce and school porfolios.
           </p>
         </div>
 
@@ -21,7 +21,7 @@ const About = () => {
           <h3>Software Development</h3>
           <p>
             Find the best and experienced software developers on our site, for all
-            software design and development tasks. Here you will get people who can develop all kind of softwares using the best and latest technologies.
+            software design and development tasks, using the modern, latest technologies.
           </p>
         </div>
 

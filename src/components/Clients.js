@@ -7,7 +7,7 @@ import hooli from "../images/hooli.png";
 
 const Clients = () => {
   return (
-    <div className="clients bg-light">
+    <div className="clients">
       <div className="c-title">
         <h2>We are trusted by many big companies</h2>
       </div>
@@ -18,7 +18,7 @@ const Clients = () => {
         </div>
         <div>
           <span>Amazon</span>
-          <img src={amazon} alt="amazon logo" style={{height: "100px", marginTop:"30px"}} />
+          <img src={amazon} alt="amazon logo" style={{height: "100px", marginTop:"20px"}} />
         </div>
         <div>
           <span>Meta</span>

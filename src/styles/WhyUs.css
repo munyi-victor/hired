@@ -16,10 +16,9 @@
 .reasons span {
   margin-right: 3px;
   background-color: #fff;
-  width: 8px;
-  height: 4px;
+  width: 10px;
   padding: 2px;
-  border-radius: 4px;
+  border-radius: 50px;
 }
 
 .reasons p {

@@ -1,7 +1,8 @@
 import React from "react";
 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import './App.css';
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Topnav from "./components/Topnav";
 import Landing from "./components/Landing";
@@ -9,31 +10,42 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Clients from "./components/Clients";
 import WhyUs from "./components/WhyUs";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 // import Reviews from "./components/Reviews";
 
 const App = () => {
-  return (
-    <>
+  const Home = () => {
+    return (
       <div>
-        <Topnav/>
+        <Topnav />
         <Landing />
         <Clients />
         <About />
-        <WhyUs/>
-        {/* <Reviews/> */}
+        <WhyUs />
         <Footer />
       </div>
+    );
+  }
 
-      
-    </>
-    // <BrowserRouter>
-    //     <Topnav />
-    //     <Routes>
-    //       <Route path="/" element={<Landing />} />
-    //       <Route path="/about" element={<About />} />
-    //       <Route path="/contact" element={<Contact />} />
-    //     </Routes>
-    //   </BrowserRouter>
+  return (
+    // <div>
+    //   <Topnav />
+    //   <Landing />
+    //   <Clients />
+    //   <About />
+    //   <WhyUs />
+    //   {/* <Reviews/> */}
+    //   <Footer />
+    // </div>
+
+    <Router>
+      <Routes>
+        <Route path="/login" element={ <Login/> } />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+    </Router>
   );
 };
 

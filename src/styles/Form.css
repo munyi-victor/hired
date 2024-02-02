@@ -1,0 +1,38 @@
+.form-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  text-align: center;
+  justify-content: center;
+  padding: 100px;
+  padding-left: 35vw;
+}
+
+.form-el {
+  width: 30vw;
+  height: 75vh;
+  background-color: #97cdff;
+  text-align: center;
+  z-index: 10;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-el div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-el div label {
+  font-weight: 500;
+}
+
+.form-el div input {
+  width: 100%;
+  border-radius: 6px;
+  padding: 4px;
+}

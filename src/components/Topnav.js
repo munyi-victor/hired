@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Topnav = () => {
   const menu = useRef();
@@ -41,14 +41,14 @@ const Topnav = () => {
 
           <div className="btns">
             <li>
-              <a href="/" className="button">
+              <Link to="/login" className="button">
                 Login
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className="button">
+              <Link to="/signup" className="button">
                 Signup
-              </a>
+              </Link>
             </li>
           </div>
         </ul>

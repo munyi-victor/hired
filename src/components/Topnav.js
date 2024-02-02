@@ -12,6 +12,8 @@ const Topnav = () => {
     menu.current.style.right = "-250px";
   }
 
+  const isLoggedIn = true;
+
   return (
     <div className="topnav shadow bg-light rounded z-index-3">
       <div className="logo">
@@ -40,16 +42,28 @@ const Topnav = () => {
           </li>
 
           <div className="btns">
-            <li>
-              <Link to="/login" className="button">
-                Login
-              </Link>
-            </li>
-            <li>
-              <Link to="/signup" className="button">
-                Signup
-              </Link>
-            </li>
+            {isLoggedIn ? (
+              <>
+                <li>
+                  <Link to="/login" className="button">
+                    Logout
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link to="/login" className="button">
+                    Login
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/signup" className="button">
+                    Signup
+                  </Link>
+                </li>
+              </>
+            )}
           </div>
         </ul>
       </div>

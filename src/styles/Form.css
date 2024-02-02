@@ -4,13 +4,13 @@
   background-color: #eee;
   text-align: center;
   justify-content: center;
-  padding: 100px;
+  padding: 70px;
   padding-left: 35vw;
 }
 
 .form-el {
   width: 30vw;
-  height: 75vh;
+  height: 85vh;
   background-color: #97cdff;
   text-align: center;
   z-index: 10;
@@ -34,5 +34,44 @@
 .form-el div input {
   width: 100%;
   border-radius: 6px;
-  padding: 4px;
+  padding: 4px 8px;
+}
+
+.show-password {
+  position: absolute;
+  right: 37vw;
+  top: 63.5vh;
+  font-weight: bold;
+  font-size: 12px;
+  color: blue;
+}
+
+.show-confirm-password {
+  position: absolute;
+  right: 37vw;
+  top: 75vh;
+  font-weight: bold;
+  color: blue;
+  font-size: 12px;
+}
+
+.submit-btn {
+  width: 200px;
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding: 10px 0;
+}
+
+.login-form {
+  height: 50vh;
+  margin-top: 10vh;
+}
+
+.show-password-login {
+  top: 50vh;
 }

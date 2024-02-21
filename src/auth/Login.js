@@ -1,7 +1,10 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "./AuthContext";
 
 const Login = () => {
+  const { login } = useAuth();
+
   const navigate = useNavigate();
 
   const [passwordType, setPasswordType] = useState("password");
@@ -14,8 +17,10 @@ const Login = () => {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     navigate("/");
+    login();
   };
   
   return (

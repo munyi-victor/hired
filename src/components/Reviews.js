@@ -3,7 +3,7 @@ import { Carousel, Container } from "react-bootstrap";
 
 const Reviews = () => {
   return (
-    <div className="reviews">
+    <div className="container reviews">
       <center>
         <h4>Here is what our clients say about us.</h4>
       </center>

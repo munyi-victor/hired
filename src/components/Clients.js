@@ -16,7 +16,7 @@ const Clients = () => {
           <span>Google</span>
           <img src={google} alt="google logo" />
         </div>
-        <div>
+        <div className='amazon'>
           <span>Amazon</span>
           <img src={amazon} alt="amazon logo" style={{height: "100px", marginTop:"20px"}} />
         </div>

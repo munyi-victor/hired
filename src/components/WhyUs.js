@@ -4,7 +4,7 @@ import pic from "../images/sidepic.jpg";
 const WhyUS = () => {
   return (
     <section className="whyus">
-      <h3>This us why big comapnies choose Hired.</h3>
+      <h3>This is why big companies choose Hired.</h3>
 
       <div className="cols">
         <div className="left-col">

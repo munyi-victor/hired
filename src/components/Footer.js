@@ -87,6 +87,12 @@ const Footer = () => {
           />
         </div>
       </div>
+
+      <div className="copyright text-center position-absolute bottom-0">
+        <p className=" fs-6" style={{ color: "#888" }}>
+          Copyright © 2024 - Hired Inc.
+        </p>
+      </div>
     </div>
   );
 }

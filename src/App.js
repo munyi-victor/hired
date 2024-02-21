@@ -4,14 +4,16 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import './App.css';
 
+import { AuthProvider } from "./auth/AuthContext";
+
 import Topnav from "./components/Topnav";
 import Landing from "./components/Landing";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Clients from "./components/Clients";
 import WhyUs from "./components/WhyUs";
-import Signup from "./components/Signup";
-import Login from "./components/Login";
+import Signup from "./auth/Signup";
+import Login from "./auth/Login";
 // import Reviews from "./components/Reviews";
 
 const App = () => {
@@ -39,13 +41,15 @@ const App = () => {
     //   <Footer />
     // </div>
 
-    <Router>
-      <Routes>
-        <Route path="/login" element={ <Login/> } />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/" element={<Home/>}/>
-      </Routes>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 };
 

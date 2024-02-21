@@ -20,3 +20,32 @@
   border: 1px solid #333;
   border-radius: 20px;
 }
+
+@media only screen and (max-width:760px) {
+  .about {
+    height: 154vh;
+  }
+  .abt-head h1 {
+    font-size: 22px;
+  }
+  .talents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 4vw;
+    margin-top: 10px;
+  }
+
+  .talents .talent {
+    width: 45vw;
+    height: 46vh;
+  }
+
+  .talent h3 {
+    font-size: 18px;
+  }
+
+  .talent p {
+    font-size: 15px;
+  }
+}

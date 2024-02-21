@@ -32,6 +32,7 @@
 .app-img img {
   width: 250px;
   display: block;
+  cursor: pointer;
 }
 
 .for-clients, .freelancers, .quick-links, .app {
@@ -41,4 +42,34 @@
 .copyright p {
   text-align: center;
   color: #fff;
+}
+
+@media only screen and (max-width:760px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 170vh;
+  }
+
+  .footer ul {
+    text-align: center;
+  }
+
+  .app,.freelancers, .quick-links, .for-clients {
+    margin-top: -100px;
+  }
+
+  .for-clients, .freelancers, .quick-links {
+    margin-bottom: -60px;
+  }
+
+  .app-img {
+    margin-left: 100px;
+  }
+
+  .copyright {
+    position: relative;
+    margin-left: 100px;
+    margin-top: 0px;
+  }
 }

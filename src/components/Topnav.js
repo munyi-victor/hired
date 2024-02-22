@@ -19,7 +19,7 @@ const Topnav = () => {
   return (
     <div className="topnav shadow bg-light rounded z-index-3">
       <div className="logo">
-        <h1 className='cursor-pointer'>Hired</h1>
+        <h1 className="cursor-pointer">Hired</h1>
       </div>
 
       <span onClick={openMenu} className="open-menu">
@@ -32,15 +32,25 @@ const Topnav = () => {
         </span>
         <ul className="mt-3">
           <li className="mt-2">
-            <a href="/" scroll={false}>
+            <a href="/" onClick={() => (menu.current.style.right = "-250px")}>
               Home
             </a>
           </li>
           <li className="mt-2">
-            <a href="#about">About</a>
+            <a
+              href="#about"
+              onClick={() => (menu.current.style.right = "-250px")}
+            >
+              About
+            </a>
           </li>
           <li className="mt-2">
-            <a href="#contact">Contact</a>
+            <a
+              href="#contact"
+              onClick={() => (menu.current.style.right = "-250px")}
+            >
+              Contact
+            </a>
           </li>
 
           <div className="btns mb-3">

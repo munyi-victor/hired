@@ -9,7 +9,7 @@ const About = () => {
         </center>
       </div>
 
-      <div className="talents">
+      <div className="talents text-center">
         <div className="talent">
           <h3>Web Design</h3>
           <p>

@@ -1,6 +1,7 @@
 .whyus {
   padding: 10px 40px;
-  background-color: #97cdff;
+  /* background-color: #97cdff; */
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .whyus .cols {

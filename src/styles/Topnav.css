@@ -65,7 +65,7 @@
 
 @media only screen and (max-width:670px) {
   .menu {
-    background-color: #9acdff;
+    /* background: #9acdff; */
     position: fixed;
     top: 0;
     margin-right: 0;
@@ -73,6 +73,8 @@
     width: 250px;
     height: 100%;
     padding-top: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
   }
 
   .menu ul {

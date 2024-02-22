@@ -1,24 +1,32 @@
 .about {
   height: 100vh;
-  width: 100%;
+  width: 80%;
   padding-top: 20px;
 }
 
 .talents {
   margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-left: 10vw;
 }
 
 .talents .talent {
-  height: 38vh;
+  /* height: 38vh;
   width: 25vw;
   background-color: #97cdff;
   padding: 10px 20px;
   border: 1px solid #333;
-  border-radius: 20px;
+  border-radius: 20px; */
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 25vw;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width:760px) {
@@ -38,7 +46,7 @@
 
   .talents .talent {
     width: 45vw;
-    height: 46vh;
+    height: 44vh;
   }
 
   .talent h3 {

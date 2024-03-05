@@ -2,14 +2,12 @@
   width: 100%;
   height: 100vh;
   background-color: #eee;
-  text-align: center;
   justify-content: center;
-  padding: 70px;
-  padding-left: 35vw;
+  display: flex;
+  align-items: center;
 }
 
 .form-el {
-  width: 30vw;
   height: 85vh;
   background-color: #97cdff;
   text-align: center;
@@ -21,10 +19,16 @@
   gap: 10px;
 }
 
+.login-form {
+  height: 65vh;
+  gap: 20px;
+}
+
 .form-el div {
   display: flex;
   flex-direction: column;
   text-align: left;
+  gap: 5px;
 }
 
 .form-el div label {
@@ -37,24 +41,6 @@
   padding: 4px 8px;
 }
 
-.show-password {
-  position: absolute;
-  right: 37vw;
-  top: 63.5vh;
-  font-weight: bold;
-  font-size: 12px;
-  color: blue;
-}
-
-.show-confirm-password {
-  position: absolute;
-  right: 37vw;
-  top: 75vh;
-  font-weight: bold;
-  color: blue;
-  font-size: 12px;
-}
-
 .submit-btn {
   width: 200px;
   background-color: blue;
@@ -65,13 +51,44 @@
   outline: none;
   border-radius: 16px;
   padding: 10px 0;
+  justify-content: center;
+  display: flex;
 }
 
-.login-form {
-  height: 50vh;
-  margin-top: 10vh;
-}
+.show-password {
+    position: absolute;
+    right: 40vw;
+    top: 61.5vh;
+    font-weight: bold;
+    font-size: 12px;
+    color: blue;
+  }
 
-.show-password-login {
-  top: 50vh;
+  .show-confirm-password {
+    position: absolute;
+    right: 40vw;
+    top: 73.5vh;
+    font-weight: bold;
+    color: blue;
+    font-size: 12px;
+  }
+
+  .show-password-login {
+    top: 50.5vh;
+  }
+
+@media only screen and (max-width: 760px) {
+  .show-password {
+    right: 22vw;
+    top: 61vh;
+  }
+
+  .show-confirm-password {
+    right: 22vw;
+    top: 73vh;
+  }
+
+  .show-password-login {
+    top: 50vh;
+  }
 }

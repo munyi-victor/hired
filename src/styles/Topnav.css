@@ -63,6 +63,12 @@
   font-weight: bold;
 }
 
+.auth-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 @media only screen and (max-width:670px) {
   .menu {
     /* background: #9acdff; */
@@ -75,6 +81,8 @@
     padding-top: 60px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
   }
 
   .menu ul {
@@ -83,5 +91,13 @@
 
   .open-menu, .close-menu {
     display: block;
+  }
+
+  .auth-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 20px;
   }
 }

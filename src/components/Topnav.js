@@ -55,13 +55,13 @@ const Topnav = () => {
 
           <div className="btns mb-3">
             {isLoggedIn ? (
-              <>
+              <div className="auth-links">
                 <li>
                   <Logout />
                 </li>
-              </>
+              </div>
             ) : (
-              <>
+              <div className="auth-links">
                 <li>
                   <Link to="/login" className="button">
                     Login
@@ -72,7 +72,7 @@ const Topnav = () => {
                     Signup
                   </Link>
                 </li>
-              </>
+              </div>
             )}
           </div>
         </ul>

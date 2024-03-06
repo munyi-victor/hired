@@ -14,8 +14,12 @@ import Clients from "./components/Clients";
 import WhyUs from "./components/WhyUs";
 import Signup from "./auth/Signup";
 import Login from "./auth/Login";
-import Dashboard from "./dashboard/Dashboard";
 // import Reviews from "./components/Reviews";
+
+import Dashboard from "./dashboard/Dashboard";
+import PostJob from "./dashboard/PostJob";
+import FindJobs from "./dashboard/FindJobs";
+import JobDetails from "./dashboard/JobDetails";
 
 const App = () => {
   const Home = () => {
@@ -38,7 +42,13 @@ const App = () => {
           <Route path="/login" Component={Login} />
           <Route path="/signup" Component={Signup} />
           <Route path="/" Component={Home} />
-          <Route path="/dashboard" Component={Dashboard} />
+
+          <Route exact path="/dashboard" Component={Dashboard} />
+
+          <Route path="/dashboard/post-job" Component={PostJob} />
+          <Route path="/dashboard/find-jobs" Component={FindJobs} />
+
+          <Route path="/dashboard/jobs/:id" render={(props) => <JobDetails {...props}/>} />
         </Routes>
       </Router>
     </AuthProvider>

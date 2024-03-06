@@ -14,7 +14,7 @@ import Clients from "./components/Clients";
 import WhyUs from "./components/WhyUs";
 import Signup from "./auth/Signup";
 import Login from "./auth/Login";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./dashboard/Dashboard";
 // import Reviews from "./components/Reviews";
 
 const App = () => {
@@ -31,22 +31,14 @@ const App = () => {
     );
   }
 
-  const MainDashboard = () => {
-    return (
-      <div>
-        <Topnav />
-        <Dashboard/>
-      </div>
-    )
-  }
   return (
     <AuthProvider>
       <Router>
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" Component={MainDashboard} />
+          <Route path="/login" Component={Login} />
+          <Route path="/signup" Component={Signup} />
+          <Route path="/" Component={Home} />
+          <Route path="/dashboard" Component={Dashboard} />
         </Routes>
       </Router>
     </AuthProvider>

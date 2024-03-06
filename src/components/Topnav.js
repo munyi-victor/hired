@@ -57,6 +57,12 @@ const Topnav = () => {
             {isLoggedIn ? (
               <div className="auth-links">
                 <li>
+                  <Link to={"/dashboard"} className="button">
+                    Dashboard
+                  </Link>
+                </li>
+                
+                <li>
                   <Logout />
                 </li>
               </div>

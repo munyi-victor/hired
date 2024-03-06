@@ -1,7 +1,10 @@
 import React from 'react';
-import sidepic from "../images/sidepic.jpg"
+import sidepic from "../images/sidepic.jpg";
+import { useAuth } from "../auth/AuthContext";
 
 const Landing = () => {
+  const { isLoggedIn } = useAuth();
+
   return (
     <div className="container-fluid">
       <div className="landing">
@@ -12,7 +15,7 @@ const Landing = () => {
           <h5>We bring all your dreams into reality.</h5>
 
           <div className='landing-btn'>
-            <a href='/'>Get Started</a>
+            <a href={isLoggedIn ? '/dashboard' : '/login'}>Get Started</a>
           </div>
         </div>
 

@@ -39,16 +39,17 @@ const App = () => {
     <AuthProvider>
       <Router>
         <Routes>
-          <Route path="/login" Component={Login} />
-          <Route path="/signup" Component={Signup} />
+          <Route path="login" Component={Login} />
+          <Route path="signup" Component={Signup} />
           <Route path="/" Component={Home} />
 
-          <Route exact path="/dashboard" Component={Dashboard} />
-
+          <Route exact path="dashboard" Component={Dashboard}/>
           <Route path="/dashboard/post-job" Component={PostJob} />
           <Route path="/dashboard/find-jobs" Component={FindJobs} />
-
-          <Route path="/dashboard/jobs/:id" render={(props) => <JobDetails {...props}/>} />
+          <Route
+            path="/dashboard/:id"
+            render={(props) => <JobDetails {...props} />}
+          />
         </Routes>
       </Router>
     </AuthProvider>

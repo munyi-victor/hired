@@ -16,7 +16,7 @@ const Dashboard = () => {
   }, [])
   
   const handleClick = (jobId) => {
-    navigate(`/dashboard/jobs/${jobId}`);
+    navigate(`/dashboard/${jobId}`);
   }
 
   return (

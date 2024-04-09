@@ -1,6 +1,6 @@
 export const Jobs = [
   {
-    id: "01",
+    id: 1,
     title: "Frontend web developer",
     description:
       "We want a frontend developer who can be able to clone a web page like that of YouTube.",
@@ -8,7 +8,7 @@ export const Jobs = [
       "We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube.",
   },
   {
-    id: "02",
+    id: 2,
     title: "Frontend web developer",
     description:
       "We want a frontend developer who can be able to clone a web page like that of YouTube.",
@@ -16,7 +16,7 @@ export const Jobs = [
       "We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube.",
   },
   {
-    id: "03",
+    id: 3,
     title: "Frontend web developer",
     description:
       "We want a frontend developer who can be able to clone a web page like that of YouTube.",
@@ -24,7 +24,7 @@ export const Jobs = [
       "We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube.",
   },
   {
-    id: "04",
+    id: 4,
     title: "Frontend web developer",
     description:
       "We want a frontend developer who can be able to clone a web page like that of YouTube.",
@@ -32,7 +32,7 @@ export const Jobs = [
       "We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube.",
   },
   {
-    id: "04",
+    id: 5,
     title: "Frontend web developer",
     description:
       "We want a frontend developer who can be able to clone a web page like that of YouTube.",
@@ -40,7 +40,7 @@ export const Jobs = [
       "We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube. We want a frontend developer who can be able to clone a web page like that of YouTube.",
   },
   {
-    id: "06",
+    id: 6,
     title: "Frontend web developer",
     description:
       "We want a frontend developer who can be able to clone a web page like that of YouTube.",

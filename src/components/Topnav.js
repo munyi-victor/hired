@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../auth/AuthContext';
 import Logout from '../auth/Logout';
 
+import Logo from "../images/hiredlogo.png";
+
 const Topnav = () => {
   const { isLoggedIn } = useAuth();
 
@@ -19,7 +21,10 @@ const Topnav = () => {
   return (
     <div className="topnav shadow bg-light rounded z-index-3">
       <div className="logo">
-        <h1 className="cursor-pointer">Hired</h1>
+        <a href="/">
+          <img src={Logo} alt="hired logo" height="50px" />
+        </a>
+        {/* <h1 className="cursor-pointer">Hired</h1> */}
       </div>
 
       <span onClick={openMenu} className="open-menu">
@@ -61,7 +66,7 @@ const Topnav = () => {
                     Dashboard
                   </Link>
                 </li>
-                
+
                 <li>
                   <Logout />
                 </li>

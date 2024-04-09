@@ -20,6 +20,9 @@ import Dashboard from "./dashboard/Dashboard";
 import PostJob from "./dashboard/PostJob";
 import FindJobs from "./dashboard/FindJobs";
 import JobDetails from "./dashboard/JobDetails";
+import ApplyJob from "./dashboard/ApplyJob";
+
+// import {Jobs} from "./dashboard/Jobs"
 
 const App = () => {
   const Home = () => {
@@ -43,13 +46,11 @@ const App = () => {
           <Route path="signup" Component={Signup} />
           <Route path="/" Component={Home} />
 
-          <Route exact path="dashboard" Component={Dashboard}/>
+          <Route exact path="dashboard" Component={Dashboard} />
           <Route path="/dashboard/post-job" Component={PostJob} />
           <Route path="/dashboard/find-jobs" Component={FindJobs} />
-          <Route
-            path="/dashboard/:id"
-            render={(props) => <JobDetails {...props} />}
-          />
+          <Route path="/dashboard/:id" Component={JobDetails} />
+          <Route path="/dashboard/apply" Component={ApplyJob} />
         </Routes>
       </Router>
     </AuthProvider>

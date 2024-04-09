@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Jobs } from './Jobs';
 
+import Logo from "../images/hiredlogo.png";
+
 const Dashboard = () => {
   const navigate = useNavigate();
 
@@ -24,7 +26,8 @@ const Dashboard = () => {
       <nav>
         <div className="logo">
           <a href={"/dashboard"}>
-            <h1>Hired!</h1>
+            <img src={Logo} alt="hired logo" height="50px" />
+            {/* <h1>Hired!</h1> */}
           </a>
         </div>
 

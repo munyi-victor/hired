@@ -1,22 +1,29 @@
-import React from 'react';
-import { Jobs } from './Jobs';
+import React from "react";
+import { useParams, Link } from "react-router-dom";
+import { Jobs } from "./Jobs";
 
-const JobDetails = ({match}) => {
-  const jobId = match.params.id;
-  const job = Jobs.find((p) => p.id.toString() === jobId);
-  
+const JobDetails = () => {
+  const jobId = useParams();
+
+  const job = Jobs.find((job) => job.id === parseInt(jobId.id));
+
   return (
-    <div>
-      <h3>Job More Details</h3>
+    <div className="container">
+      <h3>More Job Details</h3>
 
       {job ? (
-        <div>
-          <h1>Hello</h1>
+        <div className="mt-4">
           <h5>{job.title}</h5>
           <h5>Description:</h5>
           <p>{job.description}</p>
           <h5>Requirements:</h5>
           <p>{job.moreInfo}</p>
+
+          <div>
+            <Link to="/dashboard/apply" className="btn btn-primary">
+              Apply now
+            </Link>
+          </div>
         </div>
       ) : (
         <div>
@@ -25,6 +32,6 @@ const JobDetails = ({match}) => {
       )}
     </div>
   );
-}
+};
 
-export default JobDetails
+export default JobDetails;

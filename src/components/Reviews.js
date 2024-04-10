@@ -1,38 +1,143 @@
 import React from "react";
-import { Carousel, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import {
+  MDBCarousel,
+  MDBCarouselItem,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBIcon,
+} from "mdb-react-ui-kit";
 
 const Reviews = () => {
   return (
-    <div className="container reviews">
-      <center>
-        <h4>Here is what our clients say about us.</h4>
-      </center>
+    <Container className="pt-3">
+      <h4 className="text-center">This is what our clients say about us</h4>
+      <MDBContainer className="my-5">
+        <MDBCarousel showControls dark>
+          <div>
+            <MDBCarouselItem className="active text-center">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                alt="avatar"
+                className="rounded-circle shadow-1-strong mb-4"
+                style={{ width: "150px" }}
+              />
+              <MDBRow className="d-flex justify-content-center">
+                <MDBCol lg="8">
+                  <h5 className="mb-3">Maria Kate</h5>
+                  <p>Photographer</p>
+                  <p className="text-muted">
+                    <MDBIcon fas icon="quote-left" className="pe-2" />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus et deleniti nesciunt sint eligendi reprehenderit
+                    reiciendis, quibusdam illo, beatae quia fugit consequatur
+                    laudantium velit magnam error. Consectetur distinctio fugit
+                    doloremque.
+                  </p>
+                </MDBCol>
+              </MDBRow>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon far icon="star" size="sm" />
+                </li>
+              </ul>
+            </MDBCarouselItem>
 
-      <Container className="container">
-        <Carousel>
-          <Carousel.Item>
-            <div className="review-info">
-              <h5>John Doe</h5>
-              <p>These guys are the best in every aspect.</p>
-              <div className="stars"></div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="review-info">
-              <h5>Jane Smith</h5>
-              <p>These guys are the best in every aspect.</p>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="review-info">
-              <h5>Munyi Victor</h5>
-              <p>These guys are the best in every aspect.</p>
-            </div>
-          </Carousel.Item>
-        </Carousel>
-      </Container>
-    </div>
+            <MDBCarouselItem className="text-center">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
+                alt="avatar"
+                className="rounded-circle shadow-1-strong mb-4"
+                style={{ width: "150px" }}
+              />
+              <MDBRow className="d-flex justify-content-center">
+                <MDBCol lg="8">
+                  <h5 className="mb-3">John Doe</h5>
+                  <p>Web Developer</p>
+                  <p className="text-muted">
+                    <MDBIcon fas icon="quote-left" className="pe-2" />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus et deleniti nesciunt sint eligendi reprehenderit
+                    reiciendis.
+                  </p>
+                </MDBCol>
+              </MDBRow>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon far icon="star" size="sm" />
+                </li>
+              </ul>
+            </MDBCarouselItem>
+
+            <MDBCarouselItem className="text-center">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                alt="avatar"
+                className="rounded-circle shadow-1-strong mb-4"
+                style={{ width: "150px" }}
+              />
+              <MDBRow className="d-flex justify-content-center">
+                <MDBCol lg="8">
+                  <h5 className="mb-3">Anna Deynah</h5>
+                  <p>Web Developer</p>
+                  <p className="text-muted">
+                    <MDBIcon fas icon="quote-left" className="pe-2" />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus et deleniti nesciunt sint eligendi reprehenderit
+                    reiciendis, quibusdam illo, beatae quia fugit consequatur
+                    laudantium velit magnam error. Consectetur distinctio fugit
+                    doloremque.
+                  </p>
+                </MDBCol>
+              </MDBRow>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon fas icon="star" size="sm" />
+                </li>
+                <li>
+                  <MDBIcon far icon="star" size="sm" />
+                </li>
+              </ul>
+            </MDBCarouselItem>
+          </div>
+        </MDBCarousel>
+      </MDBContainer>
+    </Container>
   );
-}
+};
 
 export default Reviews;

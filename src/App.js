@@ -14,15 +14,14 @@ import Clients from "./components/Clients";
 import WhyUs from "./components/WhyUs";
 import Signup from "./auth/Signup";
 import Login from "./auth/Login";
-// import Reviews from "./components/Reviews";
+import Reviews from "./components/Reviews";
 
 import Dashboard from "./dashboard/Dashboard";
 import PostJob from "./dashboard/PostJob";
 import FindJobs from "./dashboard/FindJobs";
 import JobDetails from "./dashboard/JobDetails";
 import ApplyJob from "./dashboard/ApplyJob";
-
-// import {Jobs} from "./dashboard/Jobs"
+import Profile from "./dashboard/Profile";
 
 const App = () => {
   const Home = () => {
@@ -33,6 +32,7 @@ const App = () => {
         <Clients />
         <About />
         <WhyUs />
+        <Reviews/>
         <Footer />
       </div>
     );
@@ -51,6 +51,7 @@ const App = () => {
           <Route path="/dashboard/find-jobs" Component={FindJobs} />
           <Route path="/dashboard/:id" Component={JobDetails} />
           <Route path="/dashboard/apply" Component={ApplyJob} />
+          <Route path="/dashboard/profile" Component={Profile} />
         </Routes>
       </Router>
     </AuthProvider>

@@ -12,8 +12,9 @@ const JobDetails = () => {
       <h3>More Job Details</h3>
 
       {job ? (
-        <div className="mt-4">
+        <div className="mt-4 card card-body">
           <h5>{job.title}</h5>
+          <hr/>
           <h5>Description:</h5>
           <p>{job.description}</p>
           <h5>Requirements:</h5>

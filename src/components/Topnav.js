@@ -49,14 +49,14 @@ const Topnav = () => {
               About
             </a>
           </li>
-          <li className="mt-2">
+          {/* <li className="mt-2">
             <a
               href="#contact"
               onClick={() => (menu.current.style.right = "-250px")}
             >
               Contact
             </a>
-          </li>
+          </li> */}
 
           <div className="btns mb-3">
             {isLoggedIn ? (

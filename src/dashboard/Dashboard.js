@@ -39,6 +39,12 @@ const Dashboard = () => {
             Find Jobs
           </Link>
         </div>
+
+        <div>
+          <Link to={"/dashboard/profile"} className='profile-view' title='profile'>
+            <span className='profile-image'>M</span>
+          </Link>
+        </div>
       </nav>
 
       <section className="available-jobs-section">

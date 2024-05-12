@@ -2,7 +2,8 @@ import React from "react";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import './App.css';
+// styles
+import { GlobalStyles } from "./styles/App.styles";
 
 import { AuthProvider } from "./auth/AuthContext";
 
@@ -40,6 +41,7 @@ const App = () => {
 
   return (
     <AuthProvider>
+      <GlobalStyles/>
       <Router>
         <Routes>
           <Route path="login" Component={Login} />
